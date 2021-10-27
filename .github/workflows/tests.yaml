@@ -19,6 +19,8 @@ jobs:
         with:
           chrome-version: stable
 
+      - uses: browser-actions/setup-firefox@latest
+
       - run: npm install
 
       - run: npm test --silent
